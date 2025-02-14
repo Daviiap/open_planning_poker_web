@@ -1,4 +1,4 @@
-.register-button {
+.back-button {
     box-sizing: border-box;
   
     /* Auto layout */
@@ -7,17 +7,11 @@
     justify-content: center;
     align-items: center;
   
-    /* Blue 2 */
-    background: #000 !important;
+    background-color: grey;
     /* Gray 6 */
     border: 1px solid #F2F2F2;
     border-radius: 8px;
   
     color: white;
     cursor: pointer;
-  }
-  
-  .register-button:disabled {
-    background-color: grey;
-    cursor: not-allowed;
   }
