@@ -6,6 +6,7 @@ import { StatusCodes } from "http-status-codes"
 import HomePoker from "../contents/HomePoker/home-poker";
 import Warning from "../contents/Warning/warning";
 import RegisterForm from "../components/RegisterForm/register-form";
+import BackButton from "../components/BackButton/back-button";
 
 export default function CreateAccount() {
 
@@ -72,6 +73,7 @@ export default function CreateAccount() {
     <Warning warning={warning} setWarning={undefined}/>
     <RegisterForm handleInput={handleInput}>
       <RegisterButton name="Create an account" onClick={submitForm} setLoading={setLoading} loading={loading} />
+      <BackButton name="Cancel" url="/"/>
     </RegisterForm>
   </HomePoker>
   );
